@@ -30,7 +30,9 @@ hot dog 的二分类问题
   early stop：当验证集损失在30个epoch不下降时，就停止训练
  
 共训练100个epoch，最终准确度到达85%左右。
+！[acc_curve](https://github.com/gaoyelu1996/Deeplearning/blob/master/%E5%88%86%E7%B1%BB/hotdog/result_imgs/acc_curve.png)
 
+![loss_curve](https://github.com/gaoyelu1996/Deeplearning/blob/master/%E5%88%86%E7%B1%BB/hotdog/result_imgs/loss_curve.png)
 
 
 
