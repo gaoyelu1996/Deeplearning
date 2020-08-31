@@ -32,7 +32,7 @@ hot dog 的二分类问题
 共训练100个epoch，最终准确度到达85%左右。
 
 
-！[acc_curve](https://github.com/gaoyelu1996/Deeplearning/blob/master/%E5%88%86%E7%B1%BB/hotdog/result_imgs/acc_curve.png)
+![acc_curve](https://github.com/gaoyelu1996/Deeplearning/blob/master/%E5%88%86%E7%B1%BB/hotdog/result_imgs/acc_curve.png)
 
 ![loss_curve](https://github.com/gaoyelu1996/Deeplearning/blob/master/%E5%88%86%E7%B1%BB/hotdog/result_imgs/loss_curve.png)
 
