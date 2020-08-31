@@ -1,5 +1,7 @@
 hot dog 的分类问题
+
 本问题是一个二分类问题，使用pytorch编写代码
+
 数据结构：
   train训练集共1798张图片（hotdog 899张，not-hotdog 899张）
   val验证集共800张图片（hotdog 400张，not-hotdog 400张）
