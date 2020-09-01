@@ -105,7 +105,7 @@ def test(model,datasets_folder,batch_size,data_len,criteron,device):
     print('Test All Acc is %2d%%(%2d/%2d)'%(100*np.sum(class_correct)/np.sum(class_total),np.sum(class_correct),np.sum(class_total)))
 
 
-def show_results(model,datasets_folder,batch_size,device):
+def show_results(model,datasets_folder,batch_size,device,num_to_label):
     dataiter=iter(datasets_folder)
     images,labels=dataiter.next()
     
@@ -123,7 +123,7 @@ def show_results(model,datasets_folder,batch_size,device):
         img=torch.transpose(images[idx].cpu(),0,2)
         ax=fig.add_subplot(4, batch_size/4, idx+1,xticks=[],yticks=[])
         ax.imshow(img.cpu())
-        ax.set_title('{}({})'.format(str(pred[idx].item()),str(labels[idx].item())),color=('green' if pred[idx] == labels[idx] else 'red'))
+        ax.set_title('{}({})'.format(num_to_label[str(pred[idx].item())],num_to_label[str(labels[idx].item())]),color=('green' if pred[idx] == labels[idx] else 'red'))
     plt.tight_layout()
     fig.savefig('test.png',bbox_inches='tight')
     return plt
@@ -139,7 +139,9 @@ test_data_len =len(test_dataset)
 
 criteron=torch.nn.CrossEntropyLoss()
 test(model,datasets_folder,batch_size=32,data_len=test_data_len,criteron=criteron,device=device)
-show_results(model,datasets_folder,batch_size=32,device=device)
+
+num_to_label={'0':'not-hotdog','1':'hotdog'}
+show_results(model,datasets_folder,batch_size=32,device=device,num_to_label=num_to_label)
     
         
     
