@@ -31,11 +31,26 @@ hot dog 的二分类问题
  
 共训练100个epoch，最终准确度到达85%左右。
 
+训练集和验证集的acc曲线如下：
 
 ![acc_curve](https://github.com/gaoyelu1996/Deeplearning/blob/master/%E5%88%86%E7%B1%BB/hotdog/result_imgs/acc_curve.png)
 
+训练集和验证集的loss曲线如下：
+
 ![loss_curve](https://github.com/gaoyelu1996/Deeplearning/blob/master/%E5%88%86%E7%B1%BB/hotdog/result_imgs/loss_curve.png)
 
+Test结果如下：
+
+Test Loss :0.305
+
+Test Acc of     0: 82%(80/97)
+
+Test Acc of     1: 87%(83/95)
+
+Test All Acc is 84%(163/192)
 
 
+可视化结果如下：
+
+![test_vurve](https://github.com/gaoyelu1996/Deeplearning/blob/master/%E5%88%86%E7%B1%BB/hotdog/result_imgs/test.png)
   
