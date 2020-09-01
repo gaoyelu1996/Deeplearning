@@ -27,6 +27,8 @@ def transform_images(istraing=None):
         transform = transforms.Compose([transforms.Resize(size=(256, 256)),
                                         transforms.RandomCrop(size=(224, 224)),
                                         transforms.RandomHorizontalFlip(),
+                                        transforms.ColorJitter(brightness=0.3, contrast=0.3, saturation=0.2, hue=0),
+                                        transforms.RandomRotation(degrees=(-10,10)),
                                         transforms.ToTensor(),
                                         transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                                              std=[0.229, 0.224, 0.225])])
